@@ -1,0 +1,97 @@
+.footer {
+    width: 100%;
+    color: #fff;
+    background: #264653;
+    padding: 40px 20px;
+    position: relative;
+    bottom: 0;
+    box-sizing: border-box;
+  }
+  
+  .footer_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between sections */
+    margin: 0 auto;
+  }
+  
+  .footer .first,
+  .footer .second,
+  .footer .third {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .footer .first h4,
+  .footer .second h4,
+  .footer .third h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 30px;
+    color: #8af8e6;
+  }
+  
+  .footer p {
+    font-size: 1rem;
+    color: white;
+    margin: 5px 0;
+  }
+  
+  .mail{
+    white-space:nowrap;
+  }
+  
+  /* Social Media Icons */
+  .footer .first p i,
+  .footer .second p i {
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s;
+    margin-right: 15px;
+  }
+  
+  .footer .first p i:hover,
+  .footer .second p i:hover {
+    color: #6C63FF;
+  }
+  
+  /* Add hover effect for skill description link */
+  .footer .third p a {
+    color: #6C63FF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .footer .third p a:hover {
+    color: #fff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .footer .first,
+    .footer .second,
+    .footer .third {
+      width: 280px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer .first,
+    .footer .second,
+    .footer .third {
+      width: 100%;
+      text-align: center;
+    }
+    .footer p {
+      font-size: 0.9rem;
+    }
+    .footer .first p,
+    .footer .second p,
+    .footer .third p {
+      font-size: 0.9rem;
+    }
+  }
+  

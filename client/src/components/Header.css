@@ -1,0 +1,90 @@
+.navbar {
+    background-color: #264653;
+    padding: 10px 0;
+    position: relative;
+}
+
+.nav a {
+    color: #4c74f9;
+    padding: 10px 20px;
+    border: 2px solid #7484d3;
+    border-radius: 8px;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav a:hover,
+.nav a.active {
+    background-color: #1d13de;
+    color: white;
+}
+
+.side_nav {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.side_nav a {
+    display: block;
+    width: 80%;
+    text-align: center;
+    padding: 12px;
+    border: 2px solid #6C63FF;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+
+.side_nav a:hover {
+    background-color: #6C63FF;
+    color: white;
+}
+
+.hamburgur {
+    display: flex;
+    justify-content: space-between; /* Push items to the edges */
+    align-items: center;
+    width: 100%;
+}
+
+.hamburgur .inner {
+    display: none;
+}
+
+@media (max-width: 769px) {
+    .nav {
+        display: none !important;
+    }
+
+    .hamburgur .inner {
+        display: block !important;
+        font-size: 24px;
+        cursor: pointer;
+        margin-left: auto; /* Push the hamburger menu to the right */
+    }
+}
+
+.colorful-text {
+    background: linear-gradient(to right, #FF5733, #FFC300, #DAF7A6, #33FF57);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.colorful-text:hover {
+    background: linear-gradient(to right, #33FF57, #FFC300, #FF5733, #DAF7A6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}

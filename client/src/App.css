@@ -1,0 +1,60 @@
+/* General styles for the app */
+.App {
+  text-align: center;
+  background-color: #121212; /* Dark background for the entire app */
+  color: white; /* Light text for contrast */
+  opacity: 1;
+}
+
+/* App logo styling */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* Animation for logo spin */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* App header styles */
+.App-header {
+  background-color: #1e1e1e; /* Slightly lighter dark background for header */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Style for the links */
+.App-link {
+  color: #61dafb; /* Light blue color for links */
+}
+
+/* Keyframes for logo spinning animation */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Adjustments for the footer, if you have one */
+footer {
+  background-color: #1e1e1e; /* Match header background */
+  color: white;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* Add more custom styles as needed */

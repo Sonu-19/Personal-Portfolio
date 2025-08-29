@@ -11,8 +11,9 @@ const Contact = () => {
     lname: "",
     email: "",
     mobile: "",
+    // rollno :"",
     message: "",
-  });
+    });
 
   const [shakeField, setShakeField] = useState("");
   const [mobileError, setMobileError] = useState(false); // New state for mobile validation
@@ -45,6 +46,7 @@ const Contact = () => {
     if (fname.trim() === "") return triggerShake("fname");
     if (lname.trim() === "") return triggerShake("lname");
     if (email.trim() === "" || !email.includes("@")) return triggerShake("email");
+    // if (rollno.trim()==="") return triggerShake("rollno");
 
     if (!/^\d{10}$/.test(mobile.trim())) {
       triggerShake("mobile");
@@ -118,6 +120,19 @@ const Contact = () => {
             />
             {mobileError && <div className="error-tooltip">Mobile number must be 10 digits</div>}
           </Form.Group>
+{/* 
+          <Form.Group className="mb-3 col-lg-6 position-relative">
+          <Form.Label>Roll No</Form.Label>
+          {/* <Form.Control
+            type="text"
+            name="rollno"
+            value={inputValue.rollno}
+            onChange={getValue}
+            className={shakeField === "rollno" ? "shake" : ""}
+            required
+          />
+          {shakeField === "rollno" && <div className="error-tooltip">Roll No is required</div>}
+        </Form.Group> */} 
 
           <Form.Group className="mb-3">
             <Form.Label>Message</Form.Label>
